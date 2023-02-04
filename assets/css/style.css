@@ -1,0 +1,76 @@
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow-y: hidden;
+}
+
+body {
+  background-color: rgb(0, 79, 71);
+}
+
+img {
+  height: 40vh;
+  width: fit-content !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto !important;
+}
+
+.height-full {
+  height: 100vh;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: white;
+  height: fit-content;
+}
+
+.logo-animate {
+  -webkit-animation: action 1.5s;
+  animation: action 1.5s;
+}
+
+@-webkit-keyframes action {
+  0% {
+    transform: translateY(300px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes action {
+  0% {
+    transform: translateY(300px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.hideToShow {
+  animation: makeVisible 2s;
+  animation-delay: 1.5s;
+}
+
+@keyframes makeVisible {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
